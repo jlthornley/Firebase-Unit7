@@ -54,9 +54,9 @@ database.ref().on("child_added", function(childSnapshot) {
 
 
   var trainName = childSnapshot.val().name;
-  var desName = childSnapshot.val().role;
+  var desName = childSnapshot.val().desName;
   var trainStart = childSnapshot.val().start;
-  var frequency = childSnapshot.val().rate;
+  var frequency = childSnapshot.val().frequency;
 
 
   console.log(trainName);
